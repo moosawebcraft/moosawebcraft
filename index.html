@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoosaWebCraft — Modern Websites. Smart Branding. Real Business Growth.</title>
+  <meta name="description" content="MoosaWebCraft is a full-service digital agency building websites, brand identity, and social media growth for startups, local businesses, and international clients.">
+  <meta name="theme-color" content="#111111">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MoosaWebCraft — Modern Websites. Smart Branding. Real Business Growth.">
+  <meta property="og:description" content="A full-service digital agency crafting websites, branding, and social media growth that turn visitors into customers.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="MoosaWebCraft — home">
+        Moosa<span class="logo-accent">Web</span>Craft
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Book a Call</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <p class="eyebrow reveal">Digital Agency · Web, Brand &amp; Social Growth</p>
+        <h1 class="hero-title reveal">
+          We Build Websites <br class="lg-only">That <span class="text-accent">Grow Businesses.</span>
+        </h1>
+        <p class="hero-sub reveal">
+          MoosaWebCraft is a full‑service digital agency that designs and builds fast,
+          elegant websites, memorable brand identities, and social media growth —
+          for startups, local businesses, and international clients alike.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Book a Free Consultation</a>
+        </div>
+
+        <div class="hero-trust reveal" aria-label="Trust indicators">
+          <div class="trust-item">
+            <span class="trust-num">100%</span>
+            <span class="trust-label">Custom‑Coded Sites</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item">
+            <span class="trust-num">17+</span>
+            <span class="trust-label">Services Under One Roof</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item">
+            <span class="trust-num">24/7</span>
+            <span class="trust-label">Ongoing Support</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card hero-card-1"></div>
+        <div class="hero-card hero-card-2"></div>
+        <div class="hero-glow"></div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <p class="eyebrow reveal">What We Do</p>
+        <h2 class="section-title reveal">A full‑service agency, under one roof</h2>
+        <p class="section-sub reveal">
+          From your first line of code to your next Instagram post — every
+          service is built from scratch, with the same standard of craft.
+        </p>
+
+        <div class="services-tabs reveal" role="tablist" aria-label="Filter services by category">
+          <button class="tab-btn active" data-filter="all" role="tab" aria-selected="true">All Services</button>
+          <button class="tab-btn" data-filter="web" role="tab" aria-selected="false">Web &amp; Development</button>
+          <button class="tab-btn" data-filter="brand" role="tab" aria-selected="false">Branding &amp; Design</button>
+          <button class="tab-btn" data-filter="social" role="tab" aria-selected="false">Social &amp; Growth</button>
+        </div>
+
+        <div class="services-grid" id="servicesGrid">
+
+          <article class="service-card reveal" data-category="web">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/><circle cx="6.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h3 class="service-title">Website Design</h3>
+            <p class="service-desc">Clean, modern interfaces designed around your brand and your customer's journey.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="web">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 9 4 13 8 17"/><polyline points="16 9 20 13 16 17"/><line x1="14" y1="5" x2="10" y2="21"/></svg>
+            </div>
+            <h3 class="service-title">Website Development</h3>
+            <p class="service-desc">Hand‑coded, high‑performance builds — fast‑loading, secure, and easy to maintain.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="web">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="8" x2="21" y2="8"/><rect x="6" y="12" width="6" height="5" rx="1"/></svg>
+            </div>
+            <h3 class="service-title">Landing Pages</h3>
+            <p class="service-desc">Focused, high‑converting single pages built for campaigns, launches, and leads.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="web">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><polyline points="3 4 3 9 8 9"/></svg>
+            </div>
+            <h3 class="service-title">Website Redesign</h3>
+            <p class="service-desc">A modern, premium overhaul of your existing site — without losing what works.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="web">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 1 1.4 0l1.6 1.6a1 1 0 0 1 0 1.4L8.4 18.6 4 20l1.4-4.4 9.3-9.3z"/><path d="M13 7.5l3.5 3.5"/></svg>
+            </div>
+            <h3 class="service-title">Website Maintenance</h3>
+            <p class="service-desc">Regular updates, backups, and fixes so your site stays fast, secure, and current.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="web">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            </div>
+            <h3 class="service-title">UI/UX Design</h3>
+            <p class="service-desc">Wireframes and interfaces designed around real user behaviour, not guesswork.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="web">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.2" y2="16.2"/></svg>
+            </div>
+            <h3 class="service-title">SEO‑Friendly Websites</h3>
+            <p class="service-desc">Built to rank from day one — fast load times, clean markup, search‑ready structure.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="web">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="6"/><line x1="14.3" y1="14.3" x2="20" y2="20"/><polyline points="8 10 9.5 11.5 12.5 8.5"/></svg>
+            </div>
+            <h3 class="service-title">Basic SEO Optimization</h3>
+            <p class="service-desc">On‑page fixes, metadata, and structure improvements to boost your visibility.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="brand">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="4.5"/><rect x="12" y="12" width="9" height="9" rx="1.5"/></svg>
+            </div>
+            <h3 class="service-title">Graphic Design</h3>
+            <p class="service-desc">Flyers, banners, and marketing visuals that stay consistent with your brand.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="brand">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 15.5c1-2 2-3 3.5-3s2.5 1 3.5 3"/><circle cx="12" cy="9" r="2"/></svg>
+            </div>
+            <h3 class="service-title">Logo Design</h3>
+            <p class="service-desc">A distinctive mark built to work everywhere — from favicons to storefronts.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="brand">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="8" cy="12" r="2.2"/><line x1="13" y1="10" x2="18" y2="10"/><line x1="13" y1="14" x2="18" y2="14"/></svg>
+            </div>
+            <h3 class="service-title">Brand Identity</h3>
+            <p class="service-desc">A complete visual system — colour, type, and tone that ties every touchpoint together.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="social">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><line x1="8.2" y1="10.8" x2="15.8" y2="6.2"/><line x1="8.2" y1="13.2" x2="15.8" y2="17.8"/></svg>
+            </div>
+            <h3 class="service-title">Social Media Management</h3>
+            <p class="service-desc">Consistent, on‑brand content and presence that keeps your audience engaged.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="social">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h3 class="service-title">Instagram Management</h3>
+            <p class="service-desc">Feed planning, captions, and posting that build a cohesive, growing presence.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="social">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14 8.5h-1.5A1.5 1.5 0 0 0 11 10v2H9v3h2v6h3v-6h2l0.5-3H14v-1.5c0-.3.2-.5.5-.5H14z"/></svg>
+            </div>
+            <h3 class="service-title">Facebook Management</h3>
+            <p class="service-desc">Page setup, content scheduling, and community engagement done consistently.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="social">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="13" y2="16"/></svg>
+            </div>
+            <h3 class="service-title">Content Strategy</h3>
+            <p class="service-desc">A clear content calendar built around your goals, audience, and voice.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="social">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="14" height="16" rx="2"/><line x1="3" y1="9" x2="17" y2="9"/><line x1="3" y1="15" x2="17" y2="15"/><polygon points="20 10 20 14 22 12" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h3 class="service-title">Reel Editing</h3>
+            <p class="service-desc">Short‑form video edited to hook attention fast and keep your brand memorable.</p>
+          </article>
+
+          <article class="service-card reveal" data-category="social">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 6"/><polyline points="15 6 21 6 21 12"/></svg>
+            </div>
+            <h3 class="service-title">Business Growth Consultation</h3>
+            <p class="service-desc">A candid look at your digital presence, with a clear plan to move it forward.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PROJECTS ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <p class="eyebrow reveal">Our Work</p>
+        <h2 class="section-title reveal">Featured Projects</h2>
+        <p class="section-sub reveal">
+          A look at what we're building. Every project below is currently
+          in development — full case studies are launching soon.
+        </p>
+
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-media" data-project="root-bloom">
+              <span class="status-badge">Coming Soon</span>
+            </div>
+            <div class="project-body">
+              <p class="project-category">Organic Restaurant Website</p>
+              <h3 class="project-title">Root &amp; Bloom</h3>
+              <p class="project-desc">A warm, earthy digital home for a farm‑to‑table restaurant — built to showcase menus, sourcing, and story.</p>
+              <button class="btn btn-disabled" disabled aria-disabled="true">View Project</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media" data-project="lumen">
+              <span class="status-badge">Coming Soon</span>
+            </div>
+            <div class="project-body">
+              <p class="project-category">Luxury Fine Dining Website</p>
+              <h3 class="project-title">Lumen</h3>
+              <p class="project-desc">An elegant, reservation‑first experience for a fine dining brand, designed around atmosphere and detail.</p>
+              <button class="btn btn-disabled" disabled aria-disabled="true">View Project</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media" data-project="smilecraft">
+              <span class="status-badge">Coming Soon</span>
+            </div>
+            <div class="project-body">
+              <p class="project-category">Healthcare &amp; Dental</p>
+              <h3 class="project-title">SmileCraft Dental</h3>
+              <p class="project-desc">A calm, trustworthy site for a modern dental practice — built to make booking an appointment effortless.</p>
+              <button class="btn btn-disabled" disabled aria-disabled="true">View Project</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media" data-project="ironforge">
+              <span class="status-badge">Coming Soon</span>
+            </div>
+            <div class="project-body">
+              <p class="project-category">Fitness &amp; Gym</p>
+              <h3 class="project-title">Iron Forge Gym</h3>
+              <p class="project-desc">A bold, high‑energy site built to convert first‑time visitors into members from the very first scroll.</p>
+              <button class="btn btn-disabled" disabled aria-disabled="true">View Project</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media" data-project="realestate">
+              <span class="status-badge">Coming Soon</span>
+            </div>
+            <div class="project-body">
+              <p class="project-category">Real Estate</p>
+              <h3 class="project-title">Real Estate Website</h3>
+              <p class="project-desc">A listings‑driven site built for easy property browsing, enquiries, and agent visibility.</p>
+              <button class="btn btn-disabled" disabled aria-disabled="true">View Project</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media" data-project="softwareagency">
+              <span class="status-badge">Coming Soon</span>
+            </div>
+            <div class="project-body">
+              <p class="project-category">Technology &amp; SaaS</p>
+              <h3 class="project-title">Software Agency Website</h3>
+              <p class="project-desc">A sharp, technical portfolio site built to present services and case studies to enterprise clients.</p>
+              <button class="btn btn-disabled" disabled aria-disabled="true">View Project</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-intro reveal">
+            <p class="eyebrow">Why MoosaWebCraft</p>
+            <h2 class="section-title">Built for businesses that can't afford to look amateur</h2>
+            <p class="section-sub">
+              We treat every website as a business tool, not just a design piece.
+              That means clean code, real performance, and a process built
+              around your growth — not just launch day.
+            </p>
+          </div>
+
+          <div class="why-list">
+            <div class="why-item reveal">
+              <div class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3>Fast Delivery</h3>
+              <p>Streamlined process, clear timelines — no endless delays.</p>
+            </div>
+
+            <div class="why-item reveal">
+              <div class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3>Responsive Design</h3>
+              <p>Flawless on every screen — from mobile to widescreen desktop.</p>
+            </div>
+
+            <div class="why-item reveal">
+              <div class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3>Clean Code</h3>
+              <p>Hand‑written, well‑structured code that's easy to scale later.</p>
+            </div>
+
+            <div class="why-item reveal">
+              <div class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3>SEO‑Friendly Websites</h3>
+              <p>Built to be found — proper structure, speed, and metadata.</p>
+            </div>
+
+            <div class="why-item reveal">
+              <div class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3>Modern UI/UX</h3>
+              <p>Interfaces designed around how people actually browse and decide.</p>
+            </div>
+
+            <div class="why-item reveal">
+              <div class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3>Long‑Term Support</h3>
+              <p>We stay involved after launch — updates, fixes, and guidance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OUR PROCESS ============ -->
+    <section class="section section-alt" id="process">
+      <div class="container">
+        <p class="eyebrow reveal">How We Work</p>
+        <h2 class="section-title reveal">A clear process, from first call to launch day</h2>
+        <p class="section-sub reveal">
+          No guesswork, no surprises. Here's exactly how a project with
+          MoosaWebCraft moves forward.
+        </p>
+
+        <ol class="process-list">
+          <li class="process-step reveal">
+            <span class="process-num">01</span>
+            <div class="process-content">
+              <h3>Discovery</h3>
+              <p>We learn your business, your goals, and who your website needs to speak to.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-num">02</span>
+            <div class="process-content">
+              <h3>Strategy</h3>
+              <p>We define the approach — structure, messaging, and priorities before any pixels.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-num">03</span>
+            <div class="process-content">
+              <h3>Design</h3>
+              <p>We craft a visual direction aligned with your brand — refined until it's right.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-num">04</span>
+            <div class="process-content">
+              <h3>Development</h3>
+              <p>We build the site by hand — fast, responsive, and thoroughly tested.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-num">05</span>
+            <div class="process-content">
+              <h3>Testing</h3>
+              <p>We check every page, link, and form across browsers and devices.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-num">06</span>
+            <div class="process-content">
+              <h3>Launch</h3>
+              <p>We deploy your site and confirm everything works exactly as intended.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-num">07</span>
+            <div class="process-content">
+              <h3>Support</h3>
+              <p>We remain on hand for updates, edits, and guidance after you go live.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ TECHNOLOGIES ============ -->
+    <section class="section" id="technologies">
+      <div class="container">
+        <p class="eyebrow reveal">Our Toolkit</p>
+        <h2 class="section-title reveal">Built with tools trusted across the industry</h2>
+        <p class="section-sub reveal">
+          The same technologies used by professional teams worldwide —
+          nothing off‑the‑shelf, nothing outdated.
+        </p>
+
+        <div class="tech-grid">
+          <div class="tech-card reveal">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3l1.6 17L12 22l6.4-2L20 3H4z"/><path d="M7.5 7h9l-.3 3.5H9l.2 2.5h6.8l-.5 5-4 1.3-4-1.3-.2-2.5"/></svg>
+            </div>
+            <span class="tech-label">HTML5</span>
+          </div>
+          <div class="tech-card reveal">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3l1.6 17L12 22l6.4-2L20 3H4z"/><path d="M16.5 7h-9l.3 3.5h8.2l-.3 3.5-3.7 1.1-3.6-1.1-.2-2"/></svg>
+            </div>
+            <span class="tech-label">CSS3</span>
+          </div>
+          <div class="tech-card reveal">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 15.5c0 1.1.7 1.8 1.8 1.8s1.7-.7 1.7-1.8V10"/><path d="M14.5 15.3c.2.9 1 1.5 2 1.5 1.2 0 2-.7 2-1.6 0-2.3-3.7-1.6-3.7-3.8 0-.9.8-1.5 1.9-1.5.9 0 1.6.4 1.9 1.2"/></svg>
+            </div>
+            <span class="tech-label">JavaScript</span>
+          </div>
+          <div class="tech-card reveal">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="6" r="2"/><circle cx="7" cy="18" r="2"/><circle cx="16" cy="12" r="2"/><path d="M7 8v8"/><path d="M9 6h3a3 3 0 0 1 3 3"/><path d="M9 18h3a3 3 0 0 0 3-3"/></svg>
+            </div>
+            <span class="tech-label">Git</span>
+          </div>
+          <div class="tech-card reveal">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 20.5v-2.6c0-.7-.2-1.2-.5-1.5 1.8-.2 3.6-.9 3.6-4a3.1 3.1 0 0 0-.8-2.1c.1-.2.4-1.2-.1-2.5 0 0-.7-.2-2.2.8a7.6 7.6 0 0 0-4 0C9.5 7.1 8.8 7.3 8.8 7.3c-.5 1.3-.2 2.3-.1 2.5A3.1 3.1 0 0 0 8 12c0 3.1 1.8 3.7 3.6 4-.2.2-.4.6-.5 1.2-.4.2-1.5.5-2.2-.6-.4-.6-1-.7-1-.7"/></svg>
+            </div>
+            <span class="tech-label">GitHub</span>
+          </div>
+          <div class="tech-card reveal">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><polyline points="8 9 5.5 12 8 15"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="15" y1="9" x2="18.5" y2="9"/><line x1="15" y1="13" x2="18.5" y2="13"/></svg>
+            </div>
+            <span class="tech-label">VS Code</span>
+          </div>
+          <div class="tech-card reveal">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h3v6H9a3 3 0 1 1 0-6z"/><path d="M12 9h3a3 3 0 1 1-3 3V9z"/><path d="M9 9H6a3 3 0 1 0 3 3V9z"/><path d="M9 15h3v3a3 3 0 1 1-3-3z"/><circle cx="15" cy="18" r="3"/></svg>
+            </div>
+            <span class="tech-label">Figma</span>
+          </div>
+          <div class="tech-card reveal">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 17V7h3.2a2.6 2.6 0 0 1 0 5.2H8"/></svg>
+            </div>
+            <span class="tech-label">Photoshop</span>
+          </div>
+          <div class="tech-card reveal">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="9" y1="7" x2="9" y2="17"/><line x1="14" y1="7" x2="14" y2="13.5"/><circle cx="14" cy="16" r="1" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <span class="tech-label">Illustrator</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOCIAL MEDIA MANAGEMENT ============ -->
+    <section class="section section-alt" id="social">
+      <div class="container">
+        <div class="split-grid">
+          <div class="split-intro reveal">
+            <p class="eyebrow">Social Media</p>
+            <h2 class="section-title">Consistent presence, on every platform that matters</h2>
+            <p class="section-sub" style="margin-bottom:1.5rem;">
+              A great website brings people in — an active, well‑run social
+              presence keeps them coming back. We plan, design, and manage
+              your social channels so your brand shows up consistently,
+              without it becoming another job on your plate.
+            </p>
+            <a href="#contact" class="btn btn-outline">Talk About Your Social Strategy</a>
+          </div>
+
+          <div class="split-features">
+            <div class="split-feature reveal">
+              <div class="split-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+              </div>
+              <div>
+                <h3>Instagram Management</h3>
+                <p>Feed strategy, captions, and consistent posting.</p>
+              </div>
+            </div>
+            <div class="split-feature reveal">
+              <div class="split-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14 8.5h-1.5A1.5 1.5 0 0 0 11 10v2H9v3h2v6h3v-6h2l0.5-3H14v-1.5c0-.3.2-.5.5-.5H14z"/></svg>
+              </div>
+              <div>
+                <h3>Facebook Management</h3>
+                <p>Page setup, scheduling, and community engagement.</p>
+              </div>
+            </div>
+            <div class="split-feature reveal">
+              <div class="split-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="4" y1="10" x2="20" y2="10"/><line x1="9" y1="4" x2="9" y2="10"/></svg>
+              </div>
+              <div>
+                <h3>Content Planning</h3>
+                <p>A calendar built around your goals and your audience.</p>
+              </div>
+            </div>
+            <div class="split-feature reveal">
+              <div class="split-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor" stroke="none"/><path d="M21 15l-5-5-9 9"/></svg>
+              </div>
+              <div>
+                <h3>Post Design</h3>
+                <p>On‑brand graphics that stop the scroll and stay recognisable.</p>
+              </div>
+            </div>
+            <div class="split-feature reveal">
+              <div class="split-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="14" height="16" rx="2"/><line x1="3" y1="9" x2="17" y2="9"/><polygon points="20 10 20 14 22 12" fill="currentColor" stroke="none"/></svg>
+              </div>
+              <div>
+                <h3>Reel Strategy</h3>
+                <p>Short‑form video planned and edited to hook attention fast.</p>
+              </div>
+            </div>
+            <div class="split-feature reveal">
+              <div class="split-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 6"/><polyline points="15 6 21 6 21 12"/></svg>
+              </div>
+              <div>
+                <h3>Brand Growth</h3>
+                <p>Steady, measurable growth in reach and engagement over time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BRANDING & CREATIVE DESIGN ============ -->
+    <section class="section" id="branding">
+      <div class="container">
+        <p class="eyebrow reveal">Branding</p>
+        <h2 class="section-title reveal">A brand that looks the same everywhere it appears</h2>
+        <p class="section-sub reveal">
+          From your logo to your last business card, everything should feel
+          like it came from the same place.
+        </p>
+
+        <div class="branding-grid">
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 15.5c1-2 2-3 3.5-3s2.5 1 3.5 3"/><circle cx="12" cy="9" r="2"/></svg>
+            </div>
+            <h3 class="service-title">Logo Design</h3>
+            <p class="service-desc">A mark that's distinctive, versatile, and unmistakably yours.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3.2"/><circle cx="17" cy="7" r="3.2"/><circle cx="12" cy="16" r="3.2"/></svg>
+            </div>
+            <h3 class="service-title">Visual Identity</h3>
+            <p class="service-desc">Colour, type, and imagery guidelines that keep every asset consistent.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="19" height="12" rx="2"/><line x1="6" y1="14.5" x2="11" y2="14.5"/><circle cx="16.5" cy="12" r="1.6"/></svg>
+            </div>
+            <h3 class="service-title">Business Cards</h3>
+            <p class="service-desc">A physical first impression designed to match your digital one.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><polyline points="15 3 15 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="16.5" x2="13" y2="16.5"/></svg>
+            </div>
+            <h3 class="service-title">Brand Guidelines</h3>
+            <p class="service-desc">A clear reference document so your brand stays consistent as you grow.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M3 15l4.5-4.5L11 14l4-4L21 14"/><line x1="9" y1="20" x2="15" y2="20"/></svg>
+            </div>
+            <h3 class="service-title">Marketing Graphics</h3>
+            <p class="service-desc">Ads, banners, and campaign visuals ready for print or digital use.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section-alt" id="faq">
+      <div class="container container-narrow">
+        <p class="eyebrow reveal">Questions</p>
+        <h2 class="section-title reveal">Frequently asked questions</h2>
+
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              How long does it take to build a website?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>Most websites are delivered within 2–4 weeks, depending on scope and how quickly content and feedback are provided. Landing pages can move faster; larger sites take a little longer.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              Do you work with clients outside your local area?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. We work with startups, local businesses, and international clients remotely — communication happens over email, WhatsApp, or video call, whatever suits you best.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              Do you offer website redesigns, or only new builds?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>Both. We regularly rebuild outdated sites into modern, faster, better‑converting versions — while preserving the content and structure that already works for you.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              Can you handle branding and social media, not just the website?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes — logo design, brand identity, and ongoing social media management are all part of what we offer, so your website and your brand grow together.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              Is SEO included in your websites?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Every site is built with clean semantic code, fast load times, and proper metadata — a solid technical SEO foundation from day one.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              Do you provide support after the website is launched?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. We offer ongoing maintenance and support packages so your site keeps running smoothly and stays up to date long after launch.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-dark" id="contact">
+      <div class="container contact-inner">
+        <div class="contact-intro reveal">
+          <p class="eyebrow eyebrow-light">Let's Talk</p>
+          <h2 class="section-title title-light">Ready to grow your business online?</h2>
+          <p class="section-sub sub-light">
+            Tell us about your project and we'll get back to you within one
+            business day with next steps.
+          </p>
+
+          <div class="contact-methods">
+            <a href="mailto:hello@moosawebcraft.com" class="contact-method">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2 6 12 13 22 6"/></svg>
+              </span>
+              <span>
+                <strong>Email</strong>
+                <span>hello@moosawebcraft.com</span>
+              </span>
+            </a>
+            <a href="https://wa.me/10000000000" target="_blank" rel="noopener noreferrer" class="contact-method">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </span>
+              <span>
+                <strong>WhatsApp</strong>
+                <span>Chat with us directly</span>
+              </span>
+            </a>
+            <a href="https://instagram.com/moosawebcraft" target="_blank" rel="noopener noreferrer" class="contact-method">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <span>
+                <strong>Instagram</strong>
+                <span>@moosawebcraft</span>
+              </span>
+            </a>
+            <a href="https://linkedin.com/company/moosawebcraft" target="_blank" rel="noopener noreferrer" class="contact-method">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="7" y1="10" x2="7" y2="17"/><circle cx="7" cy="6.5" r="0.6" fill="currentColor" stroke="none"/><path d="M11 17v-4.5a2 2 0 0 1 4 0V17"/><line x1="11" y1="10" x2="11" y2="17"/></svg>
+              </span>
+              <span>
+                <strong>LinkedIn</strong>
+                <span>MoosaWebCraft</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@company.com" required>
+          </div>
+          <div class="form-row">
+            <label for="service">Service you're interested in</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              <option>Website Design</option>
+              <option>Website Development</option>
+              <option>Landing Pages</option>
+              <option>Website Redesign</option>
+              <option>Website Maintenance</option>
+              <option>UI/UX Design</option>
+              <option>SEO‑Friendly Websites</option>
+              <option>Basic SEO Optimization</option>
+              <option>Graphic Design</option>
+              <option>Logo Design</option>
+              <option>Brand Identity</option>
+              <option>Social Media Management</option>
+              <option>Instagram Management</option>
+              <option>Facebook Management</option>
+              <option>Content Strategy</option>
+              <option>Reel Editing</option>
+              <option>Business Growth Consultation</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us a bit about your business and what you need." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-footer">Moosa<span class="logo-accent">Web</span>Craft</a>
+        <p>Modern Websites. Smart Branding. Real Business Growth.</p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://instagram.com/moosawebcraft" target="_blank" rel="noopener noreferrer" aria-label="MoosaWebCraft on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://linkedin.com/company/moosawebcraft" target="_blank" rel="noopener noreferrer" aria-label="MoosaWebCraft on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="7" y1="10" x2="7" y2="17"/><circle cx="7" cy="6.5" r="0.6" fill="currentColor" stroke="none"/><path d="M11 17v-4.5a2 2 0 0 1 4 0V17"/><line x1="11" y1="10" x2="11" y2="17"/></svg>
+          </a>
+          <a href="#" aria-label="MoosaWebCraft on Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 8h-2a2 2 0 0 0-2 2v10M9 13h4"/><circle cx="12" cy="12" r="9"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>What We Do</h4>
+        <ul>
+          <li><a href="#services">Web Design &amp; Development</a></li>
+          <li><a href="#branding">Branding &amp; Creative Design</a></li>
+          <li><a href="#social">Social Media Management</a></li>
+          <li><a href="#technologies">Our Toolkit</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@moosawebcraft.com">hello@moosawebcraft.com</a></li>
+          <li><a href="https://wa.me/10000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="https://instagram.com/moosawebcraft" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://linkedin.com/company/moosawebcraft" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> MoosaWebCraft. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
