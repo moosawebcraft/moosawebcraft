@@ -27,16 +27,16 @@ MoosaWebCraft is a digital agency that helps businesses establish a strong onlin
 
 - 🌿 Root & Bloom – Organic Restaurant Website
 - 🍷 Lumen – Fine Dining Restaurant Website
-- 🦷 SmileCraft – Dental Clinic Website *(Coming Soon)*
-- 💪 Iron Forge – Gym Website *(Coming Soon)*
+- 🦷 SmileCraft – Dental Clinic Website 
+- 💪 Iron Forge – Gym Website 
 
 ## 🌍 Live Demo
 
-https://moosawebcraft.vercel.app
+https://moosawebcraft.vercel.app/
 
 ## 📧 Contact
 
-Email: muhammadmoosa.weboffical@gmail.com
+Email:   muhammadmoosa.weboffical@gmail.com
 
 ## 👨‍💻 Developed By
 
