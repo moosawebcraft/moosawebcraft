@@ -32,11 +32,11 @@ MoosaWebCraft is a digital agency that helps businesses establish a strong onlin
 
 ## 🌍 Live Demo
 
-Coming Soon
+https://moosawebcraft.vercel.app
 
 ## 📧 Contact
 
-Email: your-email@example.com
+Email: muhammadmoosa.weboffical@gmail.com
 
 ## 👨‍💻 Developed By
 
