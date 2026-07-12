@@ -6,11 +6,14 @@
   <title>MoosaWebCraft — Modern Websites. Smart Branding. Real Business Growth.</title>
   <meta name="description" content="MoosaWebCraft is a full-service digital agency building websites, brand identity, and social media growth for startups, local businesses, and international clients.">
   <meta name="theme-color" content="#111111">
+  <link rel="canonical" href="https://moosawebcraft.com/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="MoosaWebCraft — Modern Websites. Smart Branding. Real Business Growth.">
   <meta property="og:description" content="A full-service digital agency crafting websites, branding, and social media growth that turn visitors into customers.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://moosawebcraft.com/">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +21,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "MoosaWebCraft",
+    "description": "Full-service digital agency offering web design, development, branding, and social media management.",
+    "url": "https://moosawebcraft.com/",
+    "email": "hello@moosawebcraft.com",
+    "sameAs": [
+      "https://instagram.com/moosawebcraft",
+      "https://linkedin.com/company/moosawebcraft"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -258,81 +277,96 @@
         <p class="eyebrow reveal">Our Work</p>
         <h2 class="section-title reveal">Featured Projects</h2>
         <p class="section-sub reveal">
-          A look at what we're building. Every project below is currently
-          in development — full case studies are launching soon.
+          Live, fully responsive websites built end‑to‑end — from first wireframe to final deploy.
         </p>
 
         <div class="projects-grid">
 
           <article class="project-card reveal">
-            <div class="project-media" data-project="root-bloom">
-              <span class="status-badge">Coming Soon</span>
-            </div>
+            <a class="project-media" href="https://root-bloom-indol.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Root & Bloom live site">
+              <img
+                src="images/root-bloom.webp"
+                alt="Root & Bloom farm-to-table restaurant website homepage"
+                loading="lazy"
+                width="1400"
+                height="700"
+              >
+              <span class="status-badge status-live"><span class="status-dot"></span>Live</span>
+            </a>
             <div class="project-body">
-              <p class="project-category">Organic Restaurant Website</p>
+              <p class="project-category">Organic Farm‑to‑Table Restaurant</p>
               <h3 class="project-title">Root &amp; Bloom</h3>
-              <p class="project-desc">A warm, earthy digital home for a farm‑to‑table restaurant — built to showcase menus, sourcing, and story.</p>
-              <button class="btn btn-disabled" disabled aria-disabled="true">View Project</button>
+              <p class="project-desc">A premium farm‑to‑table restaurant website focused on storytelling, seasonal menus, elegant dining, and modern responsive design.</p>
+              <div class="project-actions">
+                <a href="https://root-bloom-indol.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Live</a>
+                <a href="https://github.com/moosawebcraft/root-bloom" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Code</a>
+              </div>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <div class="project-media" data-project="lumen">
-              <span class="status-badge">Coming Soon</span>
-            </div>
+            <a class="project-media" href="https://lumen-theta-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Lumen live site">
+              <img
+                src="images/lumen.webp"
+                alt="Lumen luxury fine dining restaurant website homepage"
+                loading="lazy"
+                width="1400"
+                height="698"
+              >
+              <span class="status-badge status-live"><span class="status-dot"></span>Live</span>
+            </a>
             <div class="project-body">
-              <p class="project-category">Luxury Fine Dining Website</p>
+              <p class="project-category">Luxury Fine Dining Restaurant</p>
               <h3 class="project-title">Lumen</h3>
-              <p class="project-desc">An elegant, reservation‑first experience for a fine dining brand, designed around atmosphere and detail.</p>
-              <button class="btn btn-disabled" disabled aria-disabled="true">View Project</button>
+              <p class="project-desc">A premium fine dining restaurant website featuring elegant typography, luxury visuals, reservation experience, and refined UI.</p>
+              <div class="project-actions">
+                <a href="https://lumen-theta-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Live</a>
+                <a href="https://github.com/moosawebcraft/lumen" target="_blank"rel="noopener noreferrer" class="btn btn-outline btn-sm">View Code</a>
+              </div>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <div class="project-media" data-project="smilecraft">
-              <span class="status-badge">Coming Soon</span>
-            </div>
+            <a class="project-media" href="https://smilecraft-flax.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View SmileCraft live site">
+              <img
+                src="images/smilecraft.webp"
+                alt="SmileCraft dental clinic website homepage"
+                loading="lazy"
+                width="1400"
+                height="705"
+              >
+              <span class="status-badge status-live"><span class="status-dot"></span>Live</span>
+            </a>
             <div class="project-body">
-              <p class="project-category">Healthcare &amp; Dental</p>
-              <h3 class="project-title">SmileCraft Dental</h3>
-              <p class="project-desc">A calm, trustworthy site for a modern dental practice — built to make booking an appointment effortless.</p>
-              <button class="btn btn-disabled" disabled aria-disabled="true">View Project</button>
+              <p class="project-category">Dental Clinic Website</p>
+              <h3 class="project-title">SmileCraft</h3>
+              <p class="project-desc">A modern dental clinic website with appointment booking, premium UI, responsive design, doctor profiles, services, and testimonials.</p>
+              <div class="project-actions">
+                <a href="https://smilecraft-flax.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Live</a>
+                <a href="https://github.com/moosawebcraft/smilecraft" target="_blank"rel="noopener noreferrer"class="btn btn-outline btn-sm">View Code</a>
+              </div>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <div class="project-media" data-project="ironforge">
-              <span class="status-badge">Coming Soon</span>
-            </div>
+            <a class="project-media" href="https://iron-forge-pi.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Iron Forge live site">
+              <img
+                src="images/iron-forge.webp"
+                alt="Iron Forge gym and fitness website homepage"
+                loading="lazy"
+                width="1400"
+                height="698"
+              >
+              <span class="status-badge status-live"><span class="status-dot"></span>Live</span>
+            </a>
             <div class="project-body">
-              <p class="project-category">Fitness &amp; Gym</p>
-              <h3 class="project-title">Iron Forge Gym</h3>
-              <p class="project-desc">A bold, high‑energy site built to convert first‑time visitors into members from the very first scroll.</p>
-              <button class="btn btn-disabled" disabled aria-disabled="true">View Project</button>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-media" data-project="realestate">
-              <span class="status-badge">Coming Soon</span>
-            </div>
-            <div class="project-body">
-              <p class="project-category">Real Estate</p>
-              <h3 class="project-title">Real Estate Website</h3>
-              <p class="project-desc">A listings‑driven site built for easy property browsing, enquiries, and agent visibility.</p>
-              <button class="btn btn-disabled" disabled aria-disabled="true">View Project</button>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-media" data-project="softwareagency">
-              <span class="status-badge">Coming Soon</span>
-            </div>
-            <div class="project-body">
-              <p class="project-category">Technology &amp; SaaS</p>
-              <h3 class="project-title">Software Agency Website</h3>
-              <p class="project-desc">A sharp, technical portfolio site built to present services and case studies to enterprise clients.</p>
-              <button class="btn btn-disabled" disabled aria-disabled="true">View Project</button>
+              <p class="project-category">Gym &amp; Fitness Website</p>
+              <h3 class="project-title">Iron Forge</h3>
+              <p class="project-desc">A premium strength and performance gym website featuring membership plans, trainer showcase, fitness branding, and responsive UX.</p>
+              <div class="project-actions">
+                <a href="https://iron-forge-pi.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Live</a>
+                <a href="https://github.com/moosawebcraft/iron-forge"target="_blank"rel="noopener noreferrer"class="btn btn-outline btn-sm">View Code</a>
+              </div>
             </div>
           </article>
 
@@ -794,11 +828,11 @@
         <form class="contact-form reveal" id="contactForm" novalidate>
           <div class="form-row">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" required>
+            <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name">
           </div>
           <div class="form-row">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            <input type="email" id="email" name="email" placeholder="you@company.com" required autocomplete="email">
           </div>
           <div class="form-row">
             <label for="service">Service you're interested in</label>
