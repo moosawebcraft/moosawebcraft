@@ -311,7 +311,7 @@
             </div>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card reveal" data-project="root-bloom">
             <a class="project-media" href="https://root-bloom-indol.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Root & Bloom live site">
               <img
                 src="images/root-bloom.webp"
@@ -326,14 +326,20 @@
               <p class="project-category">Organic Farm‑to‑Table Restaurant</p>
               <h3 class="project-title">Root &amp; Bloom</h3>
               <p class="project-desc">A premium farm‑to‑table restaurant website focused on storytelling, seasonal menus, elegant dining, and modern responsive design.</p>
+              <div class="project-badges">
+                <span class="project-badge">HTML5</span>
+                <span class="project-badge">CSS3</span>
+                <span class="project-badge">JavaScript</span>
+              </div>
               <div class="project-actions">
                 <a href="https://root-bloom-indol.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Live</a>
                 <a href="https://github.com/moosawebcraft/root-bloom" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Code</a>
+                <button type="button" class="btn btn-outline btn-sm" data-project-details="root-bloom">Details</button>
               </div>
             </div>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card reveal" data-project="lumen">
             <a class="project-media" href="https://lumen-theta-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Lumen live site">
               <img
                 src="images/lumen.webp"
@@ -348,14 +354,20 @@
               <p class="project-category">Luxury Fine Dining Restaurant</p>
               <h3 class="project-title">Lumen</h3>
               <p class="project-desc">A premium fine dining restaurant website featuring elegant typography, luxury visuals, reservation experience, and refined UI.</p>
+              <div class="project-badges">
+                <span class="project-badge">HTML5</span>
+                <span class="project-badge">CSS3</span>
+                <span class="project-badge">JavaScript</span>
+              </div>
               <div class="project-actions">
                 <a href="https://lumen-theta-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Live</a>
-                <a href="https://github.com/moosawebcraft/lumen" target="_blank"rel="noopener noreferrer" class="btn btn-outline btn-sm">View Code</a>
+                <a href="https://github.com/moosawebcraft/lumen" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Code</a>
+                <button type="button" class="btn btn-outline btn-sm" data-project-details="lumen">Details</button>
               </div>
             </div>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card reveal" data-project="smilecraft">
             <a class="project-media" href="https://smilecraft-flax.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View SmileCraft live site">
               <img
                 src="images/smilecraft.webp"
@@ -370,14 +382,20 @@
               <p class="project-category">Dental Clinic Website</p>
               <h3 class="project-title">SmileCraft</h3>
               <p class="project-desc">A modern dental clinic website with appointment booking, premium UI, responsive design, doctor profiles, services, and testimonials.</p>
+              <div class="project-badges">
+                <span class="project-badge">HTML5</span>
+                <span class="project-badge">CSS3</span>
+                <span class="project-badge">JavaScript</span>
+              </div>
               <div class="project-actions">
                 <a href="https://smilecraft-flax.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Live</a>
-                <a href="https://github.com/moosawebcraft/smilecraft" target="_blank"rel="noopener noreferrer"class="btn btn-outline btn-sm">View Code</a>
+                <a href="https://github.com/moosawebcraft/smilecraft" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Code</a>
+                <button type="button" class="btn btn-outline btn-sm" data-project-details="smilecraft">Details</button>
               </div>
             </div>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card reveal" data-project="iron-forge">
             <a class="project-media" href="https://iron-forge-pi.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Iron Forge live site">
               <img
                 src="images/iron-forge.webp"
@@ -392,9 +410,15 @@
               <p class="project-category">Gym &amp; Fitness Website</p>
               <h3 class="project-title">Iron Forge</h3>
               <p class="project-desc">A premium strength and performance gym website featuring membership plans, trainer showcase, fitness branding, and responsive UX.</p>
+              <div class="project-badges">
+                <span class="project-badge">HTML5</span>
+                <span class="project-badge">CSS3</span>
+                <span class="project-badge">JavaScript</span>
+              </div>
               <div class="project-actions">
                 <a href="https://iron-forge-pi.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Live</a>
-                <a href="https://github.com/moosawebcraft/iron-forge"target="_blank"rel="noopener noreferrer"class="btn btn-outline btn-sm">View Code</a>
+                <a href="https://github.com/moosawebcraft/iron-forge" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Code</a>
+                <button type="button" class="btn btn-outline btn-sm" data-project-details="iron-forge">Details</button>
               </div>
             </div>
           </article>
@@ -957,7 +981,7 @@
   </footer>
 
   <!-- ============ PROJECT DETAILS MODAL ============ -->
-  <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle" hidden>
+  <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" hidden>
     <div class="project-modal-overlay" data-modal-close></div>
     <div class="project-modal-panel">
       <button type="button" class="project-modal-close" data-modal-close aria-label="Close project details">
@@ -970,7 +994,7 @@
           <img class="project-modal-media" src="images/veltrix-motors.webp" alt="Veltrix Motors luxury automotive showroom website homepage" loading="lazy">
 
           <p class="project-category">Luxury Automotive Showroom Website</p>
-          <h3 class="project-modal-title" id="projectModalTitle">Veltrix Motors</h3>
+          <h3 class="project-modal-title">Veltrix Motors</h3>
 
           <div class="project-badges">
             <span class="project-badge">HTML5</span>
@@ -1002,6 +1026,31 @@
             <p>Hand‑coded with HTML5 for structure, CSS3 for layout and animation, and vanilla JavaScript for interactivity — no frameworks or build tools required.</p>
           </div>
 
+          <div class="project-modal-section">
+            <h4>My Role</h4>
+            <p>Designed and developed the entire project solo — from concept, wireframes, and visual direction through to front‑end build, animation, and deployment.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Challenges</h4>
+            <p>Recreating a high‑end automotive showroom feel — cinematic imagery, confident typography, and smooth motion — using only vanilla CSS and JavaScript, without relying on any animation or UI framework.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Solution</h4>
+            <p>A custom animation and layout system was hand‑built with CSS transitions, transforms, and lightweight JavaScript, resulting in a fast, framework‑free site that still feels premium and production‑ready.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Key Highlights</h4>
+            <ul class="project-modal-list">
+              <li>Cinematic hero section with a bold automotive presence</li>
+              <li>Framework‑free build kept fully lightweight and fast</li>
+              <li>Consistent, premium dark UI across every section</li>
+              <li>Smooth, hand‑built scroll and hover animations</li>
+            </ul>
+          </div>
+
           <div class="project-modal-grid">
             <div>
               <h4>Responsive Design</h4>
@@ -1021,19 +1070,349 @@
             </div>
           </div>
 
+          <div class="project-modal-actions">
+            <a href="https://veltrix-motors.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Live Demo</a>
+            <a href="https://github.com/moosawebcraft/veltrix-motors" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+          </div>
+        </div>
+
+        <!-- Root & Bloom -->
+        <div class="project-modal-entry" data-entry="root-bloom">
+          <img class="project-modal-media" src="images/root-bloom.webp" alt="Root & Bloom farm-to-table restaurant website homepage" loading="lazy">
+
+          <p class="project-category">Organic Farm‑to‑Table Restaurant</p>
+          <h3 class="project-modal-title">Root &amp; Bloom</h3>
+
+          <div class="project-badges">
+            <span class="project-badge">HTML5</span>
+            <span class="project-badge">CSS3</span>
+            <span class="project-badge">JavaScript</span>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Overview</h4>
+            <p>A premium farm‑to‑table restaurant website built to tell the story of seasonal, locally‑sourced dining. The design leans into warm, organic visuals and elegant typography to turn a simple menu browse into an inviting, appetite‑driven experience.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Features</h4>
+            <ul class="project-modal-list">
+              <li>Storytelling‑led homepage highlighting the farm‑to‑table journey</li>
+              <li>Seasonal menu showcase with elegant presentation</li>
+              <li>Fully responsive across desktop, tablet, and mobile</li>
+              <li>Smooth scroll and reveal animations</li>
+              <li>Reservation‑focused calls to action</li>
+              <li>Clean, well‑structured, maintainable code</li>
+            </ul>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Technologies</h4>
+            <p>Built with HTML5 for structure, CSS3 for layout, theming, and animation, and vanilla JavaScript for interactivity — no frameworks or build tools required.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>My Role</h4>
+            <p>Handled the full build independently — UX planning, visual design, front‑end development, and deployment — translating the restaurant's farm‑to‑table story into a cohesive digital experience.</p>
+          </div>
+
           <div class="project-modal-section">
             <h4>Challenges</h4>
-            <p>Recreating a high‑end automotive showroom feel — cinematic imagery, confident typography, and smooth motion — using only vanilla CSS and JavaScript, without relying on any animation or UI framework.</p>
+            <p>Balancing an earthy, organic aesthetic with a premium dining feel, while keeping seasonal menu content easy to scan and visually appetizing across all screen sizes.</p>
           </div>
 
           <div class="project-modal-section">
             <h4>Solution</h4>
-            <p>A custom animation and layout system was hand‑built with CSS transitions, transforms, and lightweight JavaScript, resulting in a fast, framework‑free site that still feels premium and production‑ready.</p>
+            <p>A warm, editorial‑style layout with generous imagery and careful typographic hierarchy was built using custom CSS grid and flexbox systems, keeping the design elegant, fast, and easy to update.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Key Highlights</h4>
+            <ul class="project-modal-list">
+              <li>Editorial‑style storytelling throughout the homepage</li>
+              <li>Seasonal menu layout built for easy updates</li>
+              <li>Warm, organic visual identity paired with refined typography</li>
+              <li>Reservation flow designed to convert visitors into guests</li>
+            </ul>
+          </div>
+
+          <div class="project-modal-grid">
+            <div>
+              <h4>Responsive Design</h4>
+              <p>Layouts, imagery, and menu content adapt smoothly from desktop down to mobile, preserving the elegant dining feel at every breakpoint.</p>
+            </div>
+            <div>
+              <h4>Performance</h4>
+              <p>Lightweight, dependency‑free code and optimized imagery keep pages loading quickly without sacrificing visual richness.</p>
+            </div>
+            <div>
+              <h4>SEO</h4>
+              <p>Semantic HTML5 and descriptive metadata help the site surface well for local and cuisine‑related searches.</p>
+            </div>
+            <div>
+              <h4>Accessibility</h4>
+              <p>Readable contrast, logical heading structure, and keyboard‑friendly navigation support a wider range of visitors.</p>
+            </div>
           </div>
 
           <div class="project-modal-actions">
-            <a href="https://veltrix-motors.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Live Demo</a>
-            <a href="https://github.com/moosawebcraft/veltrix-motors" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+            <a href="https://root-bloom-indol.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Live Demo</a>
+            <a href="https://github.com/moosawebcraft/root-bloom" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+          </div>
+        </div>
+
+        <!-- Lumen -->
+        <div class="project-modal-entry" data-entry="lumen">
+          <img class="project-modal-media" src="images/lumen.webp" alt="Lumen luxury fine dining restaurant website homepage" loading="lazy">
+
+          <p class="project-category">Luxury Fine Dining Restaurant</p>
+          <h3 class="project-modal-title">Lumen</h3>
+
+          <div class="project-badges">
+            <span class="project-badge">HTML5</span>
+            <span class="project-badge">CSS3</span>
+            <span class="project-badge">JavaScript</span>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Overview</h4>
+            <p>A premium fine dining restaurant website designed around elegant typography and luxury visuals. The site guides visitors from an atmospheric hero through the menu and reservation experience with a refined, upscale feel throughout.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Features</h4>
+            <ul class="project-modal-list">
+              <li>Atmospheric hero with refined typography</li>
+              <li>Elegant menu presentation with premium visuals</li>
+              <li>Streamlined reservation experience</li>
+              <li>Fully responsive across desktop, tablet, and mobile</li>
+              <li>Smooth scroll‑triggered animations</li>
+              <li>SEO‑friendly, semantic markup</li>
+            </ul>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Technologies</h4>
+            <p>Hand‑coded with HTML5 for structure, CSS3 for layout and animation, and vanilla JavaScript for interactivity — no frameworks or build tools required.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>My Role</h4>
+            <p>Owned the project end‑to‑end, from concept and visual direction through front‑end development, animation, and deployment, translating a luxury dining brand into a polished web experience.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Challenges</h4>
+            <p>Capturing a refined, high‑end dining atmosphere purely through typography, spacing, and imagery, while keeping the reservation path clear and frictionless.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Solution</h4>
+            <p>A restrained, typography‑led design system with deliberate whitespace and subtle motion was built to let the imagery and menu content take center stage, reinforcing the restaurant's premium positioning.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Key Highlights</h4>
+            <ul class="project-modal-list">
+              <li>Refined typographic system that carries the luxury brand feel</li>
+              <li>Atmospheric, image‑led hero and menu sections</li>
+              <li>Frictionless, clearly signposted reservation flow</li>
+              <li>Subtle, tasteful motion throughout the experience</li>
+            </ul>
+          </div>
+
+          <div class="project-modal-grid">
+            <div>
+              <h4>Responsive Design</h4>
+              <p>Typography and imagery scale gracefully from large desktop displays down to mobile, keeping the luxury feel consistent at every size.</p>
+            </div>
+            <div>
+              <h4>Performance</h4>
+              <p>Optimized, dependency‑free code keeps the experience fast despite the rich visual presentation.</p>
+            </div>
+            <div>
+              <h4>SEO</h4>
+              <p>Semantic HTML5 and clean structure make the site easy for search engines to crawl and index.</p>
+            </div>
+            <div>
+              <h4>Accessibility</h4>
+              <p>Strong contrast, logical heading order, and keyboard‑friendly navigation support a wide range of users.</p>
+            </div>
+          </div>
+
+          <div class="project-modal-actions">
+            <a href="https://lumen-theta-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Live Demo</a>
+            <a href="https://github.com/moosawebcraft/lumen" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+          </div>
+        </div>
+
+        <!-- SmileCraft -->
+        <div class="project-modal-entry" data-entry="smilecraft">
+          <img class="project-modal-media" src="images/smilecraft.webp" alt="SmileCraft dental clinic website homepage" loading="lazy">
+
+          <p class="project-category">Dental Clinic Website</p>
+          <h3 class="project-modal-title">SmileCraft</h3>
+
+          <div class="project-badges">
+            <span class="project-badge">HTML5</span>
+            <span class="project-badge">CSS3</span>
+            <span class="project-badge">JavaScript</span>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Overview</h4>
+            <p>A modern dental clinic website built to make booking an appointment feel simple and trustworthy. The site combines a clean, clinical‑yet‑friendly UI with doctor profiles, service listings, and patient testimonials.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Features</h4>
+            <ul class="project-modal-list">
+              <li>Appointment booking flow with clear calls to action</li>
+              <li>Doctor profiles with credentials and specialties</li>
+              <li>Services overview with easy‑to‑scan layout</li>
+              <li>Patient testimonials section</li>
+              <li>Fully responsive across desktop, tablet, and mobile</li>
+              <li>Clean, well‑structured, maintainable code</li>
+            </ul>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Technologies</h4>
+            <p>Built with HTML5 for structure, CSS3 for layout and styling, and vanilla JavaScript for interactivity — no frameworks or build tools required.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>My Role</h4>
+            <p>Designed and built the full site solo — from information architecture and UI design through to development and deployment — with a focus on trust and ease of booking.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Challenges</h4>
+            <p>Presenting a large amount of information — services, doctors, testimonials — in a way that stays approachable and easy to navigate rather than clinical and overwhelming.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Solution</h4>
+            <p>A friendly, well‑organized layout with clear visual hierarchy and generous spacing was used to break content into digestible sections, keeping appointment booking front and center throughout.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Key Highlights</h4>
+            <ul class="project-modal-list">
+              <li>Clear, trust‑building appointment booking flow</li>
+              <li>Well‑organized doctor and services presentation</li>
+              <li>Friendly, approachable clinical design language</li>
+              <li>Testimonials section that reinforces patient trust</li>
+            </ul>
+          </div>
+
+          <div class="project-modal-grid">
+            <div>
+              <h4>Responsive Design</h4>
+              <p>Booking flows, profiles, and service listings adapt cleanly from desktop to mobile, keeping the experience easy to use on any device.</p>
+            </div>
+            <div>
+              <h4>Performance</h4>
+              <p>Lightweight, dependency‑free code keeps pages loading quickly for patients booking on the go.</p>
+            </div>
+            <div>
+              <h4>SEO</h4>
+              <p>Semantic HTML5 and descriptive metadata help the clinic surface well in local search results.</p>
+            </div>
+            <div>
+              <h4>Accessibility</h4>
+              <p>Readable contrast, logical structure, and keyboard‑friendly navigation support a wider range of patients.</p>
+            </div>
+          </div>
+
+          <div class="project-modal-actions">
+            <a href="https://smilecraft-flax.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Live Demo</a>
+            <a href="https://github.com/moosawebcraft/smilecraft" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+          </div>
+        </div>
+
+        <!-- Iron Forge -->
+        <div class="project-modal-entry" data-entry="iron-forge">
+          <img class="project-modal-media" src="images/iron-forge.webp" alt="Iron Forge gym and fitness website homepage" loading="lazy">
+
+          <p class="project-category">Gym &amp; Fitness Website</p>
+          <h3 class="project-modal-title">Iron Forge</h3>
+
+          <div class="project-badges">
+            <span class="project-badge">HTML5</span>
+            <span class="project-badge">CSS3</span>
+            <span class="project-badge">JavaScript</span>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Overview</h4>
+            <p>A premium strength and performance gym website built to showcase membership plans, trainers, and fitness branding with bold, high‑energy visuals and a fully responsive, production‑ready build.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Features</h4>
+            <ul class="project-modal-list">
+              <li>Bold, high‑energy hero and fitness branding</li>
+              <li>Membership plans with clear comparison layout</li>
+              <li>Trainer showcase with profiles</li>
+              <li>Fully responsive across desktop, tablet, and mobile</li>
+              <li>Smooth scroll‑triggered animations</li>
+              <li>SEO‑friendly, semantic markup</li>
+            </ul>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Technologies</h4>
+            <p>Hand‑coded with HTML5 for structure, CSS3 for layout and animation, and vanilla JavaScript for interactivity — no frameworks or build tools required.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>My Role</h4>
+            <p>Led the project end‑to‑end — brand‑aligned visual design, front‑end development, animation, and deployment — to capture the gym's high‑performance identity online.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Challenges</h4>
+            <p>Translating the intensity and energy of a strength‑training gym into a web experience, while keeping membership plans and trainer information clear and easy to compare.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Solution</h4>
+            <p>A bold visual system with strong contrast, confident typography, and purposeful motion was built to convey energy, while a structured plans and trainer layout kept key information easy to scan.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Key Highlights</h4>
+            <ul class="project-modal-list">
+              <li>High‑energy visual identity matched to the fitness brand</li>
+              <li>Clear, comparable membership plan presentation</li>
+              <li>Trainer showcase built for easy expansion</li>
+              <li>Smooth, performance‑friendly scroll animations</li>
+            </ul>
+          </div>
+
+          <div class="project-modal-grid">
+            <div>
+              <h4>Responsive Design</h4>
+              <p>Layouts, plans, and trainer cards adapt fluidly from desktop down to mobile, keeping the experience strong at every breakpoint.</p>
+            </div>
+            <div>
+              <h4>Performance</h4>
+              <p>Lightweight, dependency‑free code and optimized assets keep the site fast despite its bold visual style.</p>
+            </div>
+            <div>
+              <h4>SEO</h4>
+              <p>Semantic HTML5 and descriptive metadata make the site easy for search engines to crawl and index.</p>
+            </div>
+            <div>
+              <h4>Accessibility</h4>
+              <p>Readable contrast, logical heading hierarchy, and keyboard‑friendly navigation support a wider range of users.</p>
+            </div>
+          </div>
+
+          <div class="project-modal-actions">
+            <a href="https://iron-forge-pi.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Live Demo</a>
+            <a href="https://github.com/moosawebcraft/iron-forge" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
           </div>
         </div>
       </div>

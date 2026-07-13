@@ -170,12 +170,22 @@
     let lastFocused = null;
 
     const openModal = (key) => {
+      let activeEntry = null;
       entries.forEach((entry) => {
-        entry.style.display = entry.getAttribute("data-entry") === key ? "" : "none";
+        const isMatch = entry.getAttribute("data-entry") === key;
+        entry.style.display = isMatch ? "" : "none";
+        if (isMatch) activeEntry = entry;
       });
+
+      const titleEl = activeEntry && activeEntry.querySelector(".project-modal-title");
+      projectModal.setAttribute("aria-label", titleEl ? `${titleEl.textContent} project details` : "Project details");
+
       lastFocused = document.activeElement;
       projectModal.hidden = false;
       document.body.style.overflow = "hidden";
+
+      projectModal.scrollTop = 0;
+
       projectModal.querySelector(".project-modal-close").focus();
     };
 
