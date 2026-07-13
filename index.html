@@ -282,6 +282,35 @@
 
         <div class="projects-grid">
 
+          <article class="project-card project-card-featured reveal" data-project="veltrix-motors">
+            <a class="project-media" href="https://veltrix-motors.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Veltrix Motors live site">
+              <img
+                src="images/veltrix-motors.webp"
+                alt="Veltrix Motors luxury automotive showroom website homepage"
+                loading="lazy"
+                width="1918"
+                height="895"
+              >
+              <span class="status-badge status-live"><span class="status-dot"></span>Live</span>
+              <span class="status-badge status-featured">Featured</span>
+            </a>
+            <div class="project-body">
+              <p class="project-category">Luxury Automotive Showroom Website</p>
+              <h3 class="project-title">Veltrix Motors</h3>
+              <p class="project-desc">A premium luxury automotive showroom website with a bold automotive aesthetic, smooth scroll animations, sticky navigation, and a fully responsive, production‑ready build.</p>
+              <div class="project-badges">
+                <span class="project-badge">HTML5</span>
+                <span class="project-badge">CSS3</span>
+                <span class="project-badge">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://veltrix-motors.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Live</a>
+                <a href="https://github.com/moosawebcraft/veltrix-motors" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Code</a>
+                <button type="button" class="btn btn-outline btn-sm" data-project-details="veltrix-motors">Details</button>
+              </div>
+            </div>
+          </article>
+
           <article class="project-card reveal">
             <a class="project-media" href="https://root-bloom-indol.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Root & Bloom live site">
               <img
@@ -926,6 +955,90 @@
       </div>
     </div>
   </footer>
+
+  <!-- ============ PROJECT DETAILS MODAL ============ -->
+  <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle" hidden>
+    <div class="project-modal-overlay" data-modal-close></div>
+    <div class="project-modal-panel">
+      <button type="button" class="project-modal-close" data-modal-close aria-label="Close project details">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+
+      <div class="project-modal-body" id="projectModalBody">
+        <!-- Veltrix Motors -->
+        <div class="project-modal-entry" data-entry="veltrix-motors">
+          <img class="project-modal-media" src="images/veltrix-motors.webp" alt="Veltrix Motors luxury automotive showroom website homepage" loading="lazy">
+
+          <p class="project-category">Luxury Automotive Showroom Website</p>
+          <h3 class="project-modal-title" id="projectModalTitle">Veltrix Motors</h3>
+
+          <div class="project-badges">
+            <span class="project-badge">HTML5</span>
+            <span class="project-badge">CSS3</span>
+            <span class="project-badge">JavaScript</span>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Overview</h4>
+            <p>A premium luxury automotive showroom website built end‑to‑end with HTML5, CSS3, and vanilla JavaScript. Designed with a modern automotive aesthetic, it showcases a flagship vehicle through a cinematic hero, refined typography, and a premium dark UI — built as a production‑ready frontend without any framework overhead.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Features</h4>
+            <ul class="project-modal-list">
+              <li>Fully responsive across desktop, tablet, and mobile</li>
+              <li>Modern, luxury automotive‑inspired UI</li>
+              <li>Sticky navigation with scroll behavior</li>
+              <li>Mobile‑friendly navigation menu</li>
+              <li>Smooth scrolling and scroll‑triggered animations</li>
+              <li>Optimized, production‑ready performance</li>
+              <li>SEO‑friendly, semantic markup</li>
+              <li>Clean, well‑structured, maintainable code</li>
+            </ul>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Technologies</h4>
+            <p>Hand‑coded with HTML5 for structure, CSS3 for layout and animation, and vanilla JavaScript for interactivity — no frameworks or build tools required.</p>
+          </div>
+
+          <div class="project-modal-grid">
+            <div>
+              <h4>Responsive Design</h4>
+              <p>Layouts and typography adapt fluidly from large desktop screens down to small mobile devices, keeping the premium feel consistent at every breakpoint.</p>
+            </div>
+            <div>
+              <h4>Performance</h4>
+              <p>Lightweight, dependency‑free code with optimized assets keeps load times fast and interactions smooth.</p>
+            </div>
+            <div>
+              <h4>SEO</h4>
+              <p>Semantic HTML5, descriptive metadata, and clean structure make the site easy for search engines to crawl and index.</p>
+            </div>
+            <div>
+              <h4>Accessibility</h4>
+              <p>Readable contrast, logical heading hierarchy, and keyboard‑friendly navigation support a wider range of users.</p>
+            </div>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Challenges</h4>
+            <p>Recreating a high‑end automotive showroom feel — cinematic imagery, confident typography, and smooth motion — using only vanilla CSS and JavaScript, without relying on any animation or UI framework.</p>
+          </div>
+
+          <div class="project-modal-section">
+            <h4>Solution</h4>
+            <p>A custom animation and layout system was hand‑built with CSS transitions, transforms, and lightweight JavaScript, resulting in a fast, framework‑free site that still feels premium and production‑ready.</p>
+          </div>
+
+          <div class="project-modal-actions">
+            <a href="https://veltrix-motors.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Live Demo</a>
+            <a href="https://github.com/moosawebcraft/veltrix-motors" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js" defer></script>
 </body>

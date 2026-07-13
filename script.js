@@ -161,6 +161,43 @@
     });
   }
 
+  /* ---------- Project details modal ---------- */
+  const projectModal = document.getElementById("projectModal");
+
+  if (projectModal) {
+    const detailButtons = document.querySelectorAll("[data-project-details]");
+    const entries = projectModal.querySelectorAll("[data-entry]");
+    let lastFocused = null;
+
+    const openModal = (key) => {
+      entries.forEach((entry) => {
+        entry.style.display = entry.getAttribute("data-entry") === key ? "" : "none";
+      });
+      lastFocused = document.activeElement;
+      projectModal.hidden = false;
+      document.body.style.overflow = "hidden";
+      projectModal.querySelector(".project-modal-close").focus();
+    };
+
+    const closeModal = () => {
+      projectModal.hidden = true;
+      document.body.style.overflow = "";
+      if (lastFocused) lastFocused.focus();
+    };
+
+    detailButtons.forEach((btn) => {
+      btn.addEventListener("click", () => openModal(btn.getAttribute("data-project-details")));
+    });
+
+    projectModal.querySelectorAll("[data-modal-close]").forEach((el) => {
+      el.addEventListener("click", closeModal);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !projectModal.hidden) closeModal();
+    });
+  }
+
   /* ---------- Footer year ---------- */
   const yearEl = document.getElementById("year");
   if (yearEl) {
