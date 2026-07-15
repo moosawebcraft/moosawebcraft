@@ -18,6 +18,69 @@
   setHeaderState();
   window.addEventListener("scroll", setHeaderState, { passive: true });
 
+  /* ---------- Light / dark theme toggle ---------- */
+  const THEME_KEY = "mwc-theme";
+  const root = document.documentElement;
+  const themeColorMeta = document.getElementById("themeColorMeta");
+  const themeToggles = [
+    document.getElementById("themeToggle"),
+    document.getElementById("themeToggleFooter")
+  ].filter(Boolean);
+
+  const getStoredTheme = () => {
+    try {
+      return localStorage.getItem(THEME_KEY);
+    } catch (e) {
+      return null;
+    }
+  };
+
+  const storeTheme = (theme) => {
+    try {
+      localStorage.setItem(THEME_KEY, theme);
+    } catch (e) {}
+  };
+
+  const applyTheme = (theme) => {
+    root.setAttribute("data-theme", theme);
+    const isDark = theme === "dark";
+    if (themeColorMeta) {
+      themeColorMeta.setAttribute("content", isDark ? "#0B0B0C" : "#FAFAFA");
+    }
+    themeToggles.forEach((btn) => {
+      btn.setAttribute("aria-pressed", String(isDark));
+      btn.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+    });
+  };
+
+  const currentTheme = () => root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+
+  // Sync toggle UI with whatever theme the inline head script already applied.
+  applyTheme(currentTheme());
+
+  themeToggles.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const next = currentTheme() === "dark" ? "light" : "dark";
+      applyTheme(next);
+      storeTheme(next);
+    });
+  });
+
+  // If the person never explicitly chose a theme, keep following the OS setting live.
+  if (window.matchMedia) {
+    const mql = window.matchMedia("(prefers-color-scheme: dark)");
+    const handleOSChange = (e) => {
+      if (!getStoredTheme()) {
+        applyTheme(e.matches ? "dark" : "light");
+      }
+    };
+    if (mql.addEventListener) {
+      mql.addEventListener("change", handleOSChange);
+    } else if (mql.addListener) {
+      mql.addListener(handleOSChange);
+    }
+  }
+
   /* ---------- Mobile nav toggle ---------- */
   const navToggle = document.getElementById("navToggle");
   const mainNav = document.getElementById("mainNav");
