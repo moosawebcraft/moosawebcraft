@@ -11,9 +11,9 @@ const SITE_CONFIG = {
   // EmailJS (https://www.emailjs.com/) — create a free account, an email
   // service, and a template, then paste the three IDs it gives you below.
   // The contact form will not send until these are filled in.
-  emailJsServiceId: "YOUR_EMAILJS_SERVICE_ID",
-  emailJsTemplateId: "YOUR_EMAILJS_TEMPLATE_ID",
-  emailJsPublicKey: "YOUR_EMAILJS_PUBLIC_KEY",
+  emailJsServiceId: "service_lq9n329",
+  emailJsTemplateId: "template_3j6x17b",
+  emailJsPublicKey: "SyIRHZW2T1mtLBccR",
 
   // WhatsApp number in international format, digits only (no "+", spaces,
   // or dashes) — e.g. "923001234567" for a Pakistani number that starts
@@ -352,12 +352,13 @@ const SITE_CONFIG = {
           message: message
         })
         .then(() => {
-          formNote.textContent = "Thanks! Your message has been sent — we'll be in touch within one business day.";
-          formNote.style.color = "";
+          formNote.textContent = "✓ Message Sent Successfully";
+          formNote.style.color = "#1E7A34";
           form.reset();
         })
         .catch(() => {
-          formNote.textContent = "Something went wrong sending your message. Please try again or email us directly.";
+          formNote.textContent =
+            "We couldn't send your message right now. Please try again in a moment, or email us directly.";
           formNote.style.color = "#B3261E";
         })
         .finally(() => {
