@@ -305,9 +305,10 @@ const SITE_CONFIG = {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
 
-      const name = form.name.value.trim();
-      const email = form.email.value.trim();
-      const message = form.message.value.trim();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const subject = document.getElementById("service").value.trim();
+      const message = document.getElementById("message").value.trim();
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
       if (!name || !email || !message) {
@@ -344,13 +345,17 @@ const SITE_CONFIG = {
       formNote.textContent = "Sending your message…";
       formNote.style.color = "";
 
+      // Keys below must match the {{variables}} used inside the EmailJS
+      // template exactly — this is what actually populates the email.
+      const templateParams = {
+        from_name: name,
+        reply_to: email,
+        subject: subject || "New website inquiry",
+        message: message
+      };
+
       emailjs
-        .send(SITE_CONFIG.emailJsServiceId, SITE_CONFIG.emailJsTemplateId, {
-          name: name,
-          email: email,
-          service: form.service.value,
-          message: message
-        })
+        .send(SITE_CONFIG.emailJsServiceId, SITE_CONFIG.emailJsTemplateId, templateParams)
         .then(() => {
           formNote.textContent = "✓ Message Sent Successfully";
           formNote.style.color = "#1E7A34";
