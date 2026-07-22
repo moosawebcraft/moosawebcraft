@@ -19,7 +19,7 @@ const SITE_CONFIG = {
   // or dashes) — e.g. "923001234567" for a Pakistani number that starts
   // with 03001234567. Every "WhatsApp" / "Book a Call" link on the site
   // reads from this single value.
-  whatsappNumber: "10000000000"
+  whatsappNumber: "923327159323"
 };
 
 (function () {
