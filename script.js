@@ -3,8 +3,37 @@
    Vanilla JS, no dependencies
    ========================================================= */
 
+/* =========================================================
+   SITE CONFIG — update these values for your business.
+   Nothing else in this file needs to change.
+   ========================================================= */
+const SITE_CONFIG = {
+  // EmailJS (https://www.emailjs.com/) — create a free account, an email
+  // service, and a template, then paste the three IDs it gives you below.
+  // The contact form will not send until these are filled in.
+  emailJsServiceId: "YOUR_EMAILJS_SERVICE_ID",
+  emailJsTemplateId: "YOUR_EMAILJS_TEMPLATE_ID",
+  emailJsPublicKey: "YOUR_EMAILJS_PUBLIC_KEY",
+
+  // WhatsApp number in international format, digits only (no "+", spaces,
+  // or dashes) — e.g. "923001234567" for a Pakistani number that starts
+  // with 03001234567. Every "WhatsApp" / "Book a Call" link on the site
+  // reads from this single value.
+  whatsappNumber: "10000000000"
+};
+
 (function () {
   "use strict";
+
+  /* ---------- EmailJS init ---------- */
+  if (window.emailjs && SITE_CONFIG.emailJsPublicKey !== "YOUR_EMAILJS_PUBLIC_KEY") {
+    emailjs.init({ publicKey: SITE_CONFIG.emailJsPublicKey });
+  }
+
+  /* ---------- WhatsApp links: single source of truth ---------- */
+  document.querySelectorAll('a[href^="https://wa.me/"]').forEach((link) => {
+    link.href = `https://wa.me/${SITE_CONFIG.whatsappNumber}`;
+  });
 
   /* ---------- Sticky header ---------- */
   const header = document.getElementById("siteHeader");
@@ -144,6 +173,55 @@
     revealEls.forEach((el) => el.classList.add("in-view"));
   }
 
+  /* ---------- Animated stat counters ---------- */
+  const statEls = document.querySelectorAll(".stat-num");
+
+  const animateCount = (el) => {
+    const target = parseInt(el.getAttribute("data-count-to"), 10) || 0;
+    const suffix = el.getAttribute("data-suffix") || "";
+    const duration = 1400;
+    const start = performance.now();
+
+    const step = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(eased * target) + suffix;
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        el.textContent = target + suffix;
+      }
+    };
+    requestAnimationFrame(step);
+  };
+
+  if (statEls.length) {
+    if ("IntersectionObserver" in window && !prefersReducedMotionMQ()) {
+      const statObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animateCount(entry.target);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.4 }
+      );
+      statEls.forEach((el) => statObserver.observe(el));
+    } else {
+      statEls.forEach((el) => {
+        const target = parseInt(el.getAttribute("data-count-to"), 10) || 0;
+        const suffix = el.getAttribute("data-suffix") || "";
+        el.textContent = target + suffix;
+      });
+    }
+  }
+
+  function prefersReducedMotionMQ() {
+    return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+
   /* ---------- Services filter tabs ---------- */
   const tabButtons = document.querySelectorAll(".tab-btn");
   const serviceCards = document.querySelectorAll("#servicesGrid .service-card");
@@ -165,6 +243,34 @@
           card.classList.remove("filtered-out");
         } else {
           card.classList.add("filtered-out");
+        }
+      });
+    });
+  });
+
+  /* ---------- "Our Work" filter tabs (Websites / Branding / Social Media) ---------- */
+  const workTabButtons = document.querySelectorAll(".work-tab-btn");
+  const workPanels = document.querySelectorAll(".work-panel");
+
+  workTabButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = btn.getAttribute("data-work-filter");
+
+      workTabButtons.forEach((b) => {
+        b.classList.remove("active");
+        b.setAttribute("aria-selected", "false");
+      });
+      btn.classList.add("active");
+      btn.setAttribute("aria-selected", "true");
+
+      workPanels.forEach((panel) => {
+        const matches = panel.getAttribute("data-work-panel") === filter;
+        panel.hidden = !matches;
+        panel.classList.toggle("active", matches);
+        if (matches) {
+          // Panels start hidden, so their .reveal cards never intersect the
+          // scroll observer until switched to — reveal them immediately here.
+          panel.querySelectorAll(".reveal").forEach((el) => el.classList.add("in-view"));
         }
       });
     });
@@ -216,11 +322,50 @@
         return;
       }
 
-      // No backend wired up yet — replace this block with a real submission
-      // (e.g. fetch() to your endpoint, or a form service like Formspree).
-      formNote.textContent = "Thanks! Your message has been noted — we'll be in touch within one business day.";
+      const isConfigured =
+        window.emailjs &&
+        SITE_CONFIG.emailJsServiceId !== "YOUR_EMAILJS_SERVICE_ID" &&
+        SITE_CONFIG.emailJsTemplateId !== "YOUR_EMAILJS_TEMPLATE_ID" &&
+        SITE_CONFIG.emailJsPublicKey !== "YOUR_EMAILJS_PUBLIC_KEY";
+
+      if (!isConfigured) {
+        formNote.textContent =
+          "Form isn't connected yet — add your EmailJS IDs in script.js (SITE_CONFIG) to enable sending.";
+        formNote.style.color = "#B3261E";
+        return;
+      }
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn ? submitBtn.textContent : "";
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending…";
+      }
+      formNote.textContent = "Sending your message…";
       formNote.style.color = "";
-      form.reset();
+
+      emailjs
+        .send(SITE_CONFIG.emailJsServiceId, SITE_CONFIG.emailJsTemplateId, {
+          name: name,
+          email: email,
+          service: form.service.value,
+          message: message
+        })
+        .then(() => {
+          formNote.textContent = "Thanks! Your message has been sent — we'll be in touch within one business day.";
+          formNote.style.color = "";
+          form.reset();
+        })
+        .catch(() => {
+          formNote.textContent = "Something went wrong sending your message. Please try again or email us directly.";
+          formNote.style.color = "#B3261E";
+        })
+        .finally(() => {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalBtnText;
+          }
+        });
     });
   }
 
@@ -258,6 +403,32 @@
       if (lastFocused) lastFocused.focus();
     };
 
+    // Focus-trap helper: keeps Tab / Shift+Tab cycling within the modal
+    // instead of escaping to the page behind it.
+    const FOCUSABLE_SELECTOR =
+      'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
+
+    const trapFocus = (e) => {
+      if (e.key !== "Tab" || projectModal.hidden) return;
+
+      const focusable = Array.from(
+        projectModal.querySelectorAll(FOCUSABLE_SELECTOR)
+      ).filter((el) => el.offsetParent !== null); // skip hidden/display:none entries
+
+      if (!focusable.length) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+
     detailButtons.forEach((btn) => {
       btn.addEventListener("click", () => openModal(btn.getAttribute("data-project-details")));
     });
@@ -269,11 +440,31 @@
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && !projectModal.hidden) closeModal();
     });
+
+    projectModal.addEventListener("keydown", trapFocus);
   }
 
   /* ---------- Footer year ---------- */
   const yearEl = document.getElementById("year");
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
+  }
+
+  /* ---------- Button ripple micro-interaction ---------- */
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!prefersReducedMotion) {
+    document.addEventListener("pointerdown", (e) => {
+      const btn = e.target.closest(".btn");
+      if (!btn) return;
+      const rect = btn.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height) * 2;
+      const ripple = document.createElement("span");
+      ripple.className = "btn-ripple";
+      ripple.style.width = ripple.style.height = `${size}px`;
+      ripple.style.left = `${e.clientX - rect.left - size / 2}px`;
+      ripple.style.top = `${e.clientY - rect.top - size / 2}px`;
+      btn.appendChild(ripple);
+      ripple.addEventListener("animationend", () => ripple.remove());
+    });
   }
 })();

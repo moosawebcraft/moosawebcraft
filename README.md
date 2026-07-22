@@ -36,7 +36,7 @@ https://moosawebcraft.vercel.app/
 
 ## 📧 Contact
 
-Email:   muhammadmoosa.weboffical@gmail.com
+Email:   moosawebcraft@gmail.com
 
 ## 👨‍💻 Developed By
 
